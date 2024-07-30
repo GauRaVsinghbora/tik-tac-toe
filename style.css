@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #32746d;
+}
+/*===================== typography ========================*/
+/*===================== layouts ======================*/
+
+.box{
+    margin-top: 2rem;
+    min-width:300px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 80px;
+    gap: 10px;
+}
+.boxes{
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    color: red;
+    font-size: 30px;
+    font-weight: 550;
+}
+.reset{
+    margin-top: 1rem;
+    padding: .8rem 1rem; 
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+.winmeg{
+    background-color: rgb(201, 119, 52);
+    color: white;
+    border-radius: 10px;
+}
+.hidden{
+    visibility: hidden;
+}
+
+
+/*========================================
+    media queries 
+    ======================================*/
+@media (max-width:600px){
+    .box{
+        min-width:80%;
+        grid-auto-rows: 80px;
+        gap: 7px;
+    }
+}
